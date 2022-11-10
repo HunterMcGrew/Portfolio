@@ -9,7 +9,7 @@ function Header(props) {
 
         <h2 class="logo col-6 p-0 m-0" data-theme={props.theme}>Hunter McGrew</h2>
         <div class="col-6 p-0 m-0 d-flex justify-content-end align-items-center" id="mobileOnly" data-theme={props.theme}>
-            <p class="switcher material-symbols-outlined p-0 m-0 switched" id="switch" data-theme={props.theme}>nightlight</p>
+            <p class="switcher material-symbols-outlined p-0 m-0 switched" id="switch" data-theme={props.theme} onClick={props.switchTheme}>nightlight</p>
             <p class="toggle p-0 m-0 material-symbols-outlined" id="menu" data-theme={props.theme}>menu</p>
         </div>
         
@@ -18,7 +18,7 @@ function Header(props) {
         <div class="col-6 col-lg-6 d-flex justify-content-end desktopNav" data-theme={props.theme}>
             <ul class="navList m-0 d-flex">
                 <li class="navLinksDark">
-                    <span class="switcher material-symbols-outlined p-0 m-0 switched" id="switch2" data-theme={props.theme}>nightlight</span>
+                    <span class="switcher material-symbols-outlined p-0 m-0 switched" id="switch2" data-theme={props.theme} onClick={props.switchTheme}>nightlight</span>
                 </li>
                 <li class="navLinksDark" data-theme={props.theme}>
                     <a href="#">Back to Top</a>
