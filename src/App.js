@@ -12,7 +12,6 @@ function App() {
   const [theme, setTheme] = useLocalStorage("theme", defaultDark ? "dark" : "light");
 
   const switchTheme = () => {
-    console.log("switching theme");
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
   }

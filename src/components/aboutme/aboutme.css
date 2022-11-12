@@ -22,3 +22,31 @@
 .aboutTxt[data-theme="dark"] {
     color: var(--dark-fc);
 }
+
+
+
+@media screen and (min-width: 992px) {
+
+    #about {
+        width: 85%;
+        margin: 25px 20px 0px 20px;
+    }
+    
+    .aboutTxt {
+        font-size: 48px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    #about {
+        width: 85%;
+        margin: 25px 20px 0px 20px;
+    }
+    
+    .aboutTxt {
+        font-size: 48px;
+        font-weight: 600;
+    }
+}

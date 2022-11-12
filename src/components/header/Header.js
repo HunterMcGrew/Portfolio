@@ -6,7 +6,6 @@ function Header(props) {
 
     const mobileMenu = useRef();
     const menuIcon = useRef();
-    console.log("mobileMenu", mobileMenu);
 
     // scroll to top of page
     const scrollToTop = () =>{
