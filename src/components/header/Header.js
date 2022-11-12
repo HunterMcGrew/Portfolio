@@ -18,16 +18,16 @@ function Header(props) {
         {/* Desktop NavMenu */}
         <div className="col-6 col-lg-6 d-flex justify-content-end desktopNav" data-theme={props.theme}>
             <ul className="navList m-0 d-flex">
-                <li className="navLinksDark">
+                <li className="navLinks">
                     <span className="switcher material-symbols-outlined p-0 m-0 switched" id="switch2" data-theme={props.theme} onClick={props.switchTheme}>nightlight</span>
                 </li>
-                <li className="navLinksDark" data-theme={props.theme}>
-                    <a href="#">Back to Top</a>
+                <li className="navLinks" data-theme={props.theme}>
+                    <a href="#" data-theme={props.theme}>Back to Top</a>
                 </li>
-                <li className="navLinksDark">
+                <li className="navLinks" data-theme={props.theme}>
                     <a href="#projectSection" data-theme={props.theme}>Projects</a>
                 </li>
-                <li className="navLinksDark">
+                <li className="navLinks" data-theme={props.theme}>
                     <a className="resumeNavLink" href="#resume" data-theme={props.theme}>Resume</a>
                 </li>
             </ul>

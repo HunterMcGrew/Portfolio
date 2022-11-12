@@ -2,7 +2,7 @@ import React from 'react';
 import useLocalStorage from "use-local-storage";
 import "./reset.css";
 import './App.css';
-import "./main.css";
+// import "./main.css";
 import Header from './components/header/Header';
 import AboutMe from './components/aboutme/AboutMe';
 
@@ -18,7 +18,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" data-theme={theme}>
       <Header
         theme={theme}
         switchTheme={switchTheme}
