@@ -4,6 +4,7 @@ import "./reset.css";
 import './App.css';
 import "./main.css";
 import Header from './components/header/Header';
+import AboutMe from './components/aboutme/AboutMe';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
   const [theme, setTheme] = useLocalStorage("theme", defaultDark ? "dark" : "light");
 
   const switchTheme = () => {
+    console.log("switching theme");
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
   }
@@ -20,6 +22,9 @@ function App() {
       <Header
         theme={theme}
         switchTheme={switchTheme}
+      />
+      <AboutMe 
+        theme={theme}
       />
     </div>
   );
