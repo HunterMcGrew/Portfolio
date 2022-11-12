@@ -124,11 +124,15 @@
     font-size: 36px;
 }
 
+.toggle[data-theme="dark"] {
+    color: var(--dark-fc);
+}
+
 .close {
     color: white;
     font-size: 60px;
     position: absolute;
-    top: 0;
+    top: -12px;
     right: 5%;
     cursor: pointer;
 }

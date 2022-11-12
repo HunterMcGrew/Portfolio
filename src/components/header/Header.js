@@ -6,6 +6,7 @@ function Header(props) {
 
     const mobileMenu = useRef();
     const menuIcon = useRef();
+    console.log("mobileMenu", mobileMenu);
 
     // scroll to top of page
     const scrollToTop = () =>{
@@ -14,14 +15,15 @@ function Header(props) {
 
     // mobile menu slide in/slide out
     const mobileOpen = () => {
+        mobileMenu.current.classList.remove("slideOut");
         mobileMenu.current.classList.add("slideIn");
-        menuIcon.current.style.display = "none";
+        menuIcon.current.style.visibility = "hidden";
     }
 
     const mobileClose = () => {
         mobileMenu.current.classList.remove("slideIn");
         mobileMenu.current.classList.add("slideOut");
-        menuIcon.current.style.display = "block";
+        menuIcon.current.style.visibility = "visible";
     }
 
     return(
