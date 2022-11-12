@@ -1,25 +1,60 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./header.css";
 
 
 function Header(props) {
 
+    const mobileMenu = useRef();
+    const menuIcon = useRef();
+
+    console.log("mobileMenu", mobileMenu);
+    console.log("menuIcon", menuIcon);
+
+    // scroll to top of page
+    const scrollToTop = () =>{
+        window.scrollTo(0, 0);
+    }
+
+    // mobile menu slide in/slide out
+    const mobileOpen = () => {
+        mobileMenu.current.classList.add("slideIn");
+        console.log("mobileMenu in func", mobileMenu);
+        menuIcon.current.style.display = "none";
+        console.log("menuIcon in func", menuIcon);
+    }
+
+    const mobileClose = () => {
+        mobileMenu.current.classList.remove("slideIn");
+        mobileMenu.current.classList.add("slideOut");
+        menuIcon.current.style.display = "block";
+    }
+
     return(
 
         <header className="row justify-content-between align-items-center g-0 dark page-header" id="home" data-theme={props.theme}>
 
-        <h2 className="logo col-6 p-0 m-0" data-theme={props.theme}>Hunter McGrew</h2>
+        <h2 
+            className="logo col-6 p-0 m-0" 
+            data-theme={props.theme} 
+            onClick={scrollToTop}>
+                Hunter McGrew
+        </h2>
         <div className="col-6 p-0 m-0 d-flex justify-content-end align-items-center" id="mobileOnly" data-theme={props.theme}>
-            <p className="switcher material-symbols-outlined p-0 m-0 switched" id="switch" data-theme={props.theme} onClick={props.switchTheme}>nightlight</p>
-            <p className="toggle p-0 m-0 material-symbols-outlined" id="menu" data-theme={props.theme}>menu</p>
+            <p className="switcher material-symbols-outlined p-0" id="switch" data-theme={props.theme} onClick={props.switchTheme}>nightlight</p>
+            <p className="toggle p-0 m-0 material-symbols-outlined" 
+                id="menu" 
+                data-theme={props.theme}
+                ref={menuIcon}
+                onClick={mobileOpen}
+                >menu</p>
         </div>
         
         
         {/* Desktop NavMenu */}
-        <div className="col-6 col-lg-6 d-flex justify-content-end desktopNav" data-theme={props.theme}>
+        <div className="col-6 col-lg-6 justify-content-end desktopNav" data-theme={props.theme}>
             <ul className="navList m-0 d-flex">
                 <li className="navLinks">
-                    <span className="switcher material-symbols-outlined p-0 m-0 switched" id="switch2" data-theme={props.theme} onClick={props.switchTheme}>nightlight</span>
+                    <span className="switcher material-symbols-outlined p-0 m-0" id="switch2" data-theme={props.theme} onClick={props.switchTheme}>nightlight</span>
                 </li>
                 <li className="navLinks" data-theme={props.theme}>
                     <a href="#" data-theme={props.theme}>Back to Top</a>
@@ -35,7 +70,9 @@ function Header(props) {
         {/* End Desktop NavMenu */}
 
         {/* Mobile NavMenu */}
-        <div className="mobileNav justify-content-center align-items-center" id="mobileMenu">
+        <div className="mobileNav justify-content-center align-items-center" 
+            id="mobileMenu" 
+            ref={mobileMenu}>
             <ul className="navList">
                 <li className="mobileLinks">
                     <a className="closeOnClick" href="#">Back to Top</a>
@@ -53,7 +90,7 @@ function Header(props) {
                     <a className="closeOnClick resumeNavLink" href="https://www.linkedin.com/in/huntermcgrew/">LinkedIn</a>
                 </li>
             </ul>
-            <span className="close" id="closeToggle">&times;</span>
+            <span className="close" id="closeToggle" onClick={mobileClose}>&times;</span>
         </div>
         
         {/* End Mobile NavMenu */}

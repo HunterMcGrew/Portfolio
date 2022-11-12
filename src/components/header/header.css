@@ -151,3 +151,27 @@
         'GRAD' 0,
         'opsz' 48
 }
+
+#switch {
+    margin: 0 20px 0 0 !important;
+}
+
+@media screen and (min-width: 992px) {
+    #mobileOnly {
+        display: none !important;
+    }
+
+    .desktopNav {
+        display: flex !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #mobileOnly {
+        display: none !important;
+    }
+
+    .desktopNav {
+        display: flex !important;
+    }
+}

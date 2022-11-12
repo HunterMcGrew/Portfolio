@@ -1,0 +1,78 @@
+
+:root {
+    --dark-bg: #181717;
+    --dark-fc: #CCC5B9;
+    --orange: #EB5E28;
+    /* light mode */
+    --light-bg: #FFFCF2;
+    --light-fc: #403D39;
+}
+
+.socials {
+    padding: 10px 5%;
+    margin: 5px 0px 25px 15px;
+}
+
+.socialLinks {
+    height: 50px;
+    width: 95px;
+    background-color: var(--light-bg);
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 7px;
+    transition: 0.5s ease;
+}
+
+.socialLinksDark {
+    height: 50px;
+    width: 95px;
+    background-color: var(--dark-bg);
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 7px;
+    transition: 0.5s ease;
+}
+
+.socialLinks a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    color: var(--light-fc);
+    transition: .5s ease;
+}
+
+.socialLinksDark a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    color: var(--dark-fc);
+    transition: .5s ease;
+}
+
+.socialLinks a:hover {
+    color: white;
+}
+
+.socialLinksDark a:hover {
+    color: white;
+}
+
+.socialLinks:hover {
+    font-weight: 700;
+    box-shadow: inset 0 -4.6rem var(--dark-bg);
+}
+
+.socialLinksDark:hover {
+    font-weight: 700;
+    box-shadow: inset 0 -4.6rem var(--light-fc);
+}
