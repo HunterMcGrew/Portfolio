@@ -7,9 +7,6 @@ function Header(props) {
     const mobileMenu = useRef();
     const menuIcon = useRef();
 
-    console.log("mobileMenu", mobileMenu);
-    console.log("menuIcon", menuIcon);
-
     // scroll to top of page
     const scrollToTop = () =>{
         window.scrollTo(0, 0);
@@ -18,9 +15,7 @@ function Header(props) {
     // mobile menu slide in/slide out
     const mobileOpen = () => {
         mobileMenu.current.classList.add("slideIn");
-        console.log("mobileMenu in func", mobileMenu);
         menuIcon.current.style.display = "none";
-        console.log("menuIcon in func", menuIcon);
     }
 
     const mobileClose = () => {
