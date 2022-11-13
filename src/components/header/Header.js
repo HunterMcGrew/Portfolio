@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "../../index.css";
 import "./header.css";
+import resume from "../../assets/Hunter_McGrew_Resume.pdf";
 
 
 function Header(props) {
@@ -24,6 +25,12 @@ function Header(props) {
         mobileMenu.current.classList.remove("slideIn");
         mobileMenu.current.classList.add("slideOut");
         menuIcon.current.style.visibility = "visible";
+    }
+
+    function resumeDelay() {
+        setTimeout(() => {
+            window.open(resume);
+    }, 800)
     }
 
     return(
@@ -62,7 +69,7 @@ function Header(props) {
                     <a href="#projectSection" data-theme={props.theme}>Projects</a>
                 </li>
                 <li className="navLinks" data-theme={props.theme}>
-                    <a className="resumeNavLink" href="#resume" data-theme={props.theme}>Resume</a>
+                    <a className="resumeNavLink" href="#resume" data-theme={props.theme} onClick={resumeDelay}>Resume</a>
                 </li>
             </ul>
         </div>

@@ -1,0 +1,12 @@
+
+footer {
+    height: 75px;
+    padding: 0px 5%;
+}
+
+footer p {
+    margin: 0;
+    padding-top: 30px;
+    font-weight: 600;
+    color: var(--dark-fc);
+}
