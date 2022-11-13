@@ -1,6 +1,26 @@
 /* global css */
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+:root {
+    --dark-bg: #181717;
+    --dark-fc: #CCC5B9;
+    --orange: #EB5E28;
+    /* light mode */
+    --light-bg: #FFFCF2;
+    --light-fc: #403D39;
+}
+
 * {
     font-family: 'Exo', sans-serif;
+}
+
+.shadows {
+    /* box-shadow: 3px 3px 15px 3px rgb(0, 0, 0, .2);  */
+    box-shadow: rgba(24, 23, 23, 0.15) 0px 5px 15px,
+                rgba(24, 23, 23, 0.15) 2px 4px 24px,
+                rgba(24, 23, 23, 0.15) 6px 8px 32px;
+}
+
+.shadows[data-theme="dark"] {
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
 }

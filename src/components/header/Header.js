@@ -30,12 +30,14 @@ function Header(props) {
 
         <header className="row justify-content-between align-items-center g-0 dark page-header" id="home" data-theme={props.theme}>
 
-        <h2 
-            className="logo col-6 p-0 m-0" 
-            data-theme={props.theme} 
-            onClick={scrollToTop}>
-                Hunter McGrew
-        </h2>
+        <div className="logo-container col-6 p-0 m-0">    
+            <h2 
+                className="logo p-0 m-0" 
+                data-theme={props.theme} 
+                onClick={scrollToTop}>
+                    Hunter McGrew
+            </h2>
+        </div>
         <div className="col-6 p-0 m-0 d-flex justify-content-end align-items-center" id="mobileOnly" data-theme={props.theme}>
             <p className="switcher material-symbols-outlined p-0" id="switch" data-theme={props.theme} onClick={props.switchTheme}>nightlight</p>
             <p className="toggle p-0 m-0 material-symbols-outlined" 
