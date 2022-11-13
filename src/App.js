@@ -5,6 +5,8 @@ import './App.css';
 // import "./main.css";
 import Header from './components/header/Header';
 import AboutMe from './components/aboutme/AboutMe';
+import Social from './components/social/Social';
+import Projects from './components/projects/Projects';
 
 function App() {
 
@@ -23,6 +25,12 @@ function App() {
         switchTheme={switchTheme}
       />
       <AboutMe 
+        theme={theme}
+      />
+      <Social
+        theme={theme}
+      />
+      <Projects
         theme={theme}
       />
     </div>

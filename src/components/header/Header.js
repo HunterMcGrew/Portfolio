@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import "../../index.css";
 import "./header.css";
 
 

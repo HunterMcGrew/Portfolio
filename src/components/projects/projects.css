@@ -1,0 +1,10 @@
+
+:root {
+    --dark-bg: #181717;
+    --dark-fc: #CCC5B9;
+    --orange: #EB5E28;
+    /* light mode */
+    --light-bg: #FFFCF2;
+    --light-fc: #403D39;
+}
+
