@@ -10,15 +10,18 @@
 
 .App {
     background-color: var(--light-bg);
+    /* hide the large white space at the bottom of safari */
+    overflow-y: hidden;
 }
 
 .App[data-theme="dark"] {
     background-color: var(--dark-bg);
 }
 
-@supports(padding: max(0px)) {
-    header, body, footer {
-        padding-left: min(0vmin, env(safe-area-inset-left));
-        padding-right: min(0vmin, env(safe-area-inset-right));
+/* @supports(padding: max(0px)) {
+    .App {
+        padding-left: max(12px, env(safe-area-inset-left));
+        padding-right: max(12px, env(safe-area-inset-right));
+        padding-bottom: max(12px, env(safe-area-inset-bottom));
     }
-}
+} */
