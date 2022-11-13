@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8c919d19.css",
-    "main.js": "/portfolio/static/js/main.68b5a288.js",
+    "main.css": "/portfolio/static/css/main.310d064c.css",
+    "main.js": "/portfolio/static/js/main.9541b26e.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/zoominlife.PNG": "/portfolio/static/media/zoominlife.f5fad7cf8d2d02943398.PNG",
     "static/media/todo-webapp.PNG": "/portfolio/static/media/todo-webapp.7780a62840f2f4068d5d.PNG",
@@ -16,12 +16,12 @@
     "static/media/note_taker2.PNG": "/portfolio/static/media/note_taker2.c2a948de9870d87828d9.PNG",
     "static/media/advice-generator.PNG": "/portfolio/static/media/advice-generator.12ac8824234d6f0486f0.PNG",
     "index.html": "/portfolio/index.html",
-    "main.8c919d19.css.map": "/portfolio/static/css/main.8c919d19.css.map",
-    "main.68b5a288.js.map": "/portfolio/static/js/main.68b5a288.js.map",
+    "main.310d064c.css.map": "/portfolio/static/css/main.310d064c.css.map",
+    "main.9541b26e.js.map": "/portfolio/static/js/main.9541b26e.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c919d19.css",
-    "static/js/main.68b5a288.js"
+    "static/css/main.310d064c.css",
+    "static/js/main.9541b26e.js"
   ]
 }
