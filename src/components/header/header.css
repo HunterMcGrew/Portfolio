@@ -132,7 +132,7 @@
     color: white;
     font-size: 60px;
     position: absolute;
-    top: -12px;
+    top: 0px;
     right: 5%;
     cursor: pointer;
 }
