@@ -20,7 +20,7 @@ function Projects(props) {
 
                 return(
 
-                <div className="col-6 col-lg-6 col-xl-4 projects shadows projects-2" key={i} data-theme={props.theme}>
+                <div className="col-12 col-lg-6 col-xl-4 projects shadows projects-2" key={i} data-theme={props.theme}>
                     <div className="innerProject1 innerProject">
                         <p className="innerProjectLinks shadows shadows"><a href={projectData[i].github} target="_blank">GitHub</a></p>
                         <br/>

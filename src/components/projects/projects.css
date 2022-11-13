@@ -31,8 +31,8 @@
     min-width: 325px;
     max-width: 800px;
     height: 400px;
-    width: 48% !important;
 }
+
 
 .innerProject {
     display: block;
@@ -95,7 +95,13 @@
     object-position: 0;
 }
 
-
+/* @media screen and (orientation: portrait) and (max-width: 440px) {
+    .projects {
+        width: 32% !important;
+        min-width: 180px;
+        /* 180px max to keep margins 
+    }
+} */
 
 @media screen and (min-width: 992px) {
 

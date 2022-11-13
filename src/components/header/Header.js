@@ -94,7 +94,6 @@ function Header(props) {
                     <a className="closeOnClick" 
                         href="#" 
                         onClick={scrollToTop}
-                        target="_blank"
                         >Back to Top</a>
                 </li>
                 <li className="mobileLinks">
