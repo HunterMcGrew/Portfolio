@@ -100,14 +100,12 @@ function Header(props) {
                     <a className="closeOnClick" 
                         href="#projectSection" 
                         onClick={isMenu}
-                        target="_blank"
                         >Projects</a>
                 </li>
                 <li className="mobileLinks">
                     <a className="closeOnClick resumeNavLink" 
                         href="#resume" 
                         onClick={resumeDelay}
-                        target="_blank"
                         >Resume</a>
                 </li>
                 <li className="mobileLinks">
