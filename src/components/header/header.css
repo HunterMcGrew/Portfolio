@@ -14,7 +14,6 @@
     position: sticky;
     top: 0 !important;
     z-index: 101;
-    /* transition: .3s ease; */
     background-color: var(--light-bg);
     margin: 0;
 }

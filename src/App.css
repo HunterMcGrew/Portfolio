@@ -17,7 +17,8 @@ html {
 .App {
     background-color: var(--light-bg);
     /* hide the large white space at the bottom of safari */
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
+    contain: paint;
 }
 
 .App[data-theme="dark"] {
