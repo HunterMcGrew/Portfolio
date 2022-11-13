@@ -8,6 +8,12 @@
     --light-fc: #403D39;
 }
 
+/* fixes white background color when overscrolling on safari */
+html {
+    overscroll-behavior: contain;
+}
+
+
 .App {
     background-color: var(--light-bg);
     /* hide the large white space at the bottom of safari */
