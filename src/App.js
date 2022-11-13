@@ -35,9 +35,9 @@ function App() {
       <Projects
         theme={theme}
       />
-      <Resume
+      {/* <Resume
         theme={theme}
-      />
+      /> */}
       <Footer
         theme={theme}
       />

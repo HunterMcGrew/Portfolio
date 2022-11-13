@@ -8,10 +8,17 @@ function Header(props) {
 
     const mobileMenu = useRef();
     const menuIcon = useRef();
+    let isOpen = false;
+
+    // need a function to check whether or not pancake menu is open to close on scroll
+    const isMenu = () => {
+        isOpen ? mobileClose() : mobileOpen();
+    }
 
     // scroll to top of page
     const scrollToTop = () =>{
         window.scrollTo(0, 0);
+        isMenu();
     }
 
     // mobile menu slide in/slide out
@@ -19,15 +26,18 @@ function Header(props) {
         mobileMenu.current.classList.remove("slideOut");
         mobileMenu.current.classList.add("slideIn");
         menuIcon.current.style.visibility = "hidden";
+        isOpen = true;
     }
 
     const mobileClose = () => {
         mobileMenu.current.classList.remove("slideIn");
         mobileMenu.current.classList.add("slideOut");
         menuIcon.current.style.visibility = "visible";
+        isOpen = false;
     }
 
     function resumeDelay() {
+        isMenu();
         setTimeout(() => {
             window.open(resume);
     }, 800)
@@ -81,22 +91,45 @@ function Header(props) {
             ref={mobileMenu}>
             <ul className="navList">
                 <li className="mobileLinks">
-                    <a className="closeOnClick" href="#">Back to Top</a>
+                    <a className="closeOnClick" 
+                        href="#" 
+                        onClick={scrollToTop}
+                        target="_blank"
+                        >Back to Top</a>
                 </li>
                 <li className="mobileLinks">
-                    <a className="closeOnClick" href="#projectSection">Projects</a>
+                    <a className="closeOnClick" 
+                        href="#projectSection" 
+                        onClick={isMenu}
+                        target="_blank"
+                        >Projects</a>
                 </li>
                 <li className="mobileLinks">
-                    <a className="closeOnClick resumeNavLink" href="#resume">Resume</a>
+                    <a className="closeOnClick resumeNavLink" 
+                        href="#resume" 
+                        onClick={resumeDelay}
+                        target="_blank"
+                        >Resume</a>
                 </li>
                 <li className="mobileLinks">
-                    <a className="closeOnClick" href="https://github.com/HunterMcGrew">GitHub</a>
+                    <a className="closeOnClick" 
+                        href="https://github.com/HunterMcGrew" 
+                        onClick={isMenu}
+                        target="_blank"
+                        >GitHub</a>
                 </li>
                 <li className="mobileLinks">
-                    <a className="closeOnClick resumeNavLink" href="https://www.linkedin.com/in/huntermcgrew/">LinkedIn</a>
+                    <a className="closeOnClick resumeNavLink" 
+                        href="https://www.linkedin.com/in/huntermcgrew/" 
+                        onClick={isMenu}
+                        target="_blank"
+                        >LinkedIn</a>
                 </li>
             </ul>
-            <span className="close" id="closeToggle" onClick={mobileClose}>&times;</span>
+            <span className="close" 
+                id="closeToggle" 
+                onClick={mobileClose}
+                >&times;</span>
         </div>
         
         {/* End Mobile NavMenu */}

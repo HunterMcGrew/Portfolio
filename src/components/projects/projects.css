@@ -31,6 +31,7 @@
     min-width: 325px;
     max-width: 800px;
     height: 400px;
+    width: 48% !important;
 }
 
 .innerProject {
@@ -58,11 +59,21 @@
 .innerProjectLinks:hover {
     font-weight: 600;
     transition: .3s ease;
+    color: var(--light-fc);
 }
 
 .innerProjectLinks a {
     color: white;
     opacity: 1;
+    text-decoration: none;
+}
+
+.innerProjectLinks a:hover {
+    color: var(--light-fc);
+}
+
+.innerProjectLinks a:hover[data-theme="dark"] {
+    color: var(--dark-fc);
 }
 
 .projectImages {
