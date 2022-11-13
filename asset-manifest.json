@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.84bdf17f.css",
+    "main.js": "/portfolio/static/js/main.273885b4.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/zoominlife.PNG": "/portfolio/static/media/zoominlife.f5fad7cf8d2d02943398.PNG",
+    "static/media/todo-webapp.PNG": "/portfolio/static/media/todo-webapp.7780a62840f2f4068d5d.PNG",
+    "static/media/article-preview-component.PNG": "/portfolio/static/media/article-preview-component.70441208540fcfc44e9d.PNG",
+    "static/media/profile-card.PNG": "/portfolio/static/media/profile-card.1a9756b91b8474593440.PNG",
+    "static/media/social-network-api.PNG": "/portfolio/static/media/social-network-api.2f32545e9c4119d61a35.PNG",
+    "static/media/e-commerce-backend.PNG": "/portfolio/static/media/e-commerce-backend.f845b4e0cedcb4245b0d.PNG",
+    "static/media/Hunter_McGrew_Resume.pdf": "/portfolio/static/media/Hunter_McGrew_Resume.07fdd0fc0aad6be089e2.pdf",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/media/weather-dashboard.PNG": "/portfolio/static/media/weather-dashboard.cebb9dcdfd69dc9a84ab.PNG",
+    "static/media/tech-blog.PNG": "/portfolio/static/media/tech-blog.be459f01c081371af526.PNG",
+    "static/media/note_taker2.PNG": "/portfolio/static/media/note_taker2.c2a948de9870d87828d9.PNG",
+    "static/media/advice-generator.PNG": "/portfolio/static/media/advice-generator.12ac8824234d6f0486f0.PNG",
+    "index.html": "/portfolio/index.html",
+    "main.84bdf17f.css.map": "/portfolio/static/css/main.84bdf17f.css.map",
+    "main.273885b4.js.map": "/portfolio/static/js/main.273885b4.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84bdf17f.css",
+    "static/js/main.273885b4.js"
+  ]
+}
