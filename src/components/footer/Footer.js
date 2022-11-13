@@ -5,8 +5,8 @@ function Footer(props) {
 
     return(
 
-        <footer data-theme={props.theme}>
-            <p>
+        <footer>
+            <p data-theme={props.theme}>
                 Hunter McGrew 2022
             </p>
     </footer>

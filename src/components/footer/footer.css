@@ -8,5 +8,12 @@ footer p {
     margin: 0;
     padding-top: 30px;
     font-weight: 600;
+    color: var(--light-fc);
+}
+
+footer p[data-theme="dark"] {
+    margin: 0;
+    padding-top: 30px;
+    font-weight: 600;
     color: var(--dark-fc);
 }
