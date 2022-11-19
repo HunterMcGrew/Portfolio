@@ -16,9 +16,10 @@ function Header(props) {
     }
 
     // scroll to top of page
-    const scrollToTop = () =>{
+    const scrollToTop = (e) =>{
+        let target = e.target.classList.value;
         window.scrollTo(0, 0);
-        isMenu();
+        if (!target.includes("logo")) isMenu();
     }
 
     // mobile menu slide in/slide out
@@ -51,7 +52,8 @@ function Header(props) {
             <h2 
                 className="logo p-0 m-0" 
                 data-theme={props.theme} 
-                onClick={scrollToTop}>
+                onClick={((e) => scrollToTop(e))}
+                >
                     Hunter McGrew
             </h2>
         </div>
