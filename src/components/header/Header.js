@@ -20,6 +20,7 @@ function Header(props) {
         let target = e.target.classList.value;
         window.scrollTo(0, 0);
         if (!target.includes("logo")) isMenu();
+        if (target.includes("resumeLg")) resumeDelay();
     }
 
     // mobile menu slide in/slide out
@@ -81,7 +82,7 @@ function Header(props) {
                     <a href="#projectSection" data-theme={props.theme}>Projects</a>
                 </li>
                 <li className="navLinks" data-theme={props.theme}>
-                    <a className="resumeNavLink" href="#resume" data-theme={props.theme} onClick={resumeDelay}>Resume</a>
+                    <a className="resumeNavLink resumeLg" href="#resume" data-theme={props.theme} onClick={((e) => scrollToTop(e))}>Resume</a>
                 </li>
             </ul>
         </div>
@@ -115,6 +116,7 @@ function Header(props) {
                         href="https://github.com/HunterMcGrew" 
                         onClick={isMenu}
                         target="_blank"
+                        rel="noreferrer"
                         >GitHub</a>
                 </li>
                 <li className="mobileLinks">
@@ -122,6 +124,7 @@ function Header(props) {
                         href="https://www.linkedin.com/in/huntermcgrew/" 
                         onClick={isMenu}
                         target="_blank"
+                        rel="noreferrer"
                         >LinkedIn</a>
                 </li>
             </ul>
