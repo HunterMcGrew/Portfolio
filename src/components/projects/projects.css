@@ -6,6 +6,7 @@
     /* light mode */
     --light-bg: #FFFCF2;
     --light-fc: #403D39;
+    --light-fc-hover: #d6d6d6;
 }
 
 #projectSection {
@@ -33,7 +34,6 @@
     height: 400px;
 }
 
-
 .innerProject {
     display: block;
     font-size: 22px;
@@ -53,13 +53,28 @@
     margin: 0 auto;
     position: relative;
     top: 140px;
-    border-radius: 10px
+    border-radius: 15px;
+    /* backdrop-filter: blur(5px); */
 }
+
+/* .innerProjectLinks:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    filter:blur(5px);
+    box-shadow: inset 0 0 2000 rgba(0, 0, 0, .2);
+    background: inherit;
+    z-index: -1;
+    border-radius: 15px;
+} */
 
 .innerProjectLinks:hover {
     font-weight: 600;
     transition: .3s ease;
-    color: var(--light-fc);
+    color: var(--light-fc-hover);
 }
 
 .innerProjectLinks a {
@@ -69,11 +84,11 @@
 }
 
 .innerProjectLinks a:hover {
-    color: var(--light-fc);
+    color: white;
 }
 
 .innerProjectLinks a:hover[data-theme="dark"] {
-    color: var(--dark-fc);
+    color: white;
 }
 
 .projectImages {

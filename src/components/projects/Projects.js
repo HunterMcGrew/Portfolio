@@ -22,9 +22,9 @@ function Projects(props) {
 
                 <div className="col-12 col-lg-6 col-xl-4 projects shadows projects-2" key={i} data-theme={props.theme}>
                     <div className="innerProject1 innerProject">
-                        <p className="innerProjectLinks shadows shadows"><a href={projectData[i].github} target="_blank" rel="noreferrer">GitHub</a></p>
+                        <p className="innerProjectLinks shadows"><a href={projectData[i].github} target="_blank" rel="noreferrer">GitHub</a></p>
                         <br/>
-                        <p className="innerProjectLinks shadows shadows"><a href={projectData[i].live}  rel="noreferrer">Live</a></p>
+                        <p className="innerProjectLinks shadows"><a href={projectData[i].live}  rel="noreferrer">Live</a></p>
                     </div>
                     <img className="projectImages" id={`project${i}`} src={projectData[i].image} alt={projectData[i].alt}/>
                 </div>
