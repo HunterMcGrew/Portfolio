@@ -14,13 +14,23 @@
     margin: 25px 20px 0px 20px;
 }
 
-.aboutTxt {
+/* .aboutTxt {
     font-size: 30px;
     font-weight: 600;
+} */
+
+.aboutTxt {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.8;
 }
 
 .aboutTxt[data-theme="dark"] {
     color: var(--dark-fc);
+}
+
+.myName {
+    line-height: 3;
 }
 
 
@@ -33,7 +43,7 @@
     }
     
     .aboutTxt {
-        font-size: 48px;
+        font-size: 26px;
         font-weight: 600;
     }
 }
@@ -45,8 +55,8 @@
         margin: 25px 20px 0px 20px;
     }
     
-    .aboutTxt {
+    /* .aboutTxt {
         font-size: 48px;
         font-weight: 600;
-    }
+    } */
 }
